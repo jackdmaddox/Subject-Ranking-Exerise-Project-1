@@ -1,0 +1,44 @@
+<section class="section">
+    <table class="table">
+        <thead>
+            <tr>
+                <td> Topic</td>
+                <td> Ranking</td>
+            </tr>
+        </thead>
+    ${topicsList.map(topics => 
+        `<tr>
+            <td>${topics.topic_name}</td>
+            <td>${topics.topic_understanding}</td>
+        </tr>`
+    ).join('')}
+    </table>
+</section>
+<section class="section">
+<p>Change Your Understanding Ranking</p>
+<form action="/topics" method="POST">
+    <label>Topic 
+        <select id="topic_name" name="topic_name">
+            <option value=" ">--Please choose an option--</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="PostgreSQL">PostgreSQL</option>
+            <option value="Node">Node</option>
+            <option value="Express">Express</option>
+        </select>
+    </label>
+    <label>Ranking 
+        <select id="ranking_rating" name="ranking_rating">
+            <option value=" ">--Please choose an option--</option>
+            <option value="Awesome, 5">Awesome, 5</option>
+            <option value="Great, 5">Great, 4</option>
+            <option value="Good, 3">Good, 3</option>
+            <option value="Okay, 2">Okay, 2</option>
+            <option value="Poor, 1">Poor, 1</option>
+            <option value="Unranked, 0">Unranked, 0</option>
+        </select>
+    </label>
+    <button type="submit" class='is-primary'>Submit</button>
+</form>
+</section>

@@ -1,0 +1,21 @@
+{
+  "name": "day-1-ranking-exercise",
+  "version": "0.0.1",
+  "description": "digital craft mini project to demonstrate full stack abilities",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "author": "Jack Maddox",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.1.9",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "pg-promise": "^8.7.2"
+  }
+}
